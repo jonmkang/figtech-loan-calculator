@@ -1,0 +1,14 @@
+.Header{
+    text-align: center;
+    font-size: 18pt;
+    background-color: white;
+    color: #4d9c75;
+    width: 100vw;
+    max-height: 8vh;
+    border-bottom: .5pt solid #4d9c75;
+    margin-bottom: 2rem;
+}
+
+h2{
+    margin: 10pt;
+}

@@ -1,0 +1,93 @@
+.details{
+    margin: 2rem;
+    text-align: left;
+    text-indent: 1rem;
+    line-height: 16pt;
+    letter-spacing: .2pt;
+}
+
+.loanBox{
+    min-height: 80vh;
+    margin-bottom: 5rem;
+}
+
+.background{
+    background-color: #4d9c75;
+    width: 80%;
+    margin: 1rem;
+    z-index: 1;
+    position: relative;
+    top: -10pt;
+}
+
+.background2{
+    background-color: #4d9c75;
+    margin: 1rem;
+    z-index: 1;
+    position: relative;
+    top: 30pt;
+    left: 40pt;
+}
+
+.loan{
+    width: 110%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    outline: 1pt solid white;
+    border: 1pt solid #4d9c75;
+    z-index: 2;
+    position: relative;
+    top: -15pt; 
+    left: -35pt;
+}
+
+.loan-amount, .loan-term, .interest-rate{
+    display: flex;
+    flex-direction: column;
+    margin: 10pt;
+    font-size: 12pt;
+}
+
+input{
+    margin: 10pt;
+    padding: 5pt;
+    align-self: center;
+    text-align: center;
+    border-radius: 25pt;
+    border: 2pt solid #4d9c75; 
+    font-size: 14pt;
+    width: 50%;
+    line-height: 16pt;
+}
+
+input:hover{
+    outline: none;
+    box-shadow:
+    0 0 0 10px hsl(0, 0%, 80%),
+    0 0 0 15px hsl(0, 0%, 90%);
+}
+
+input:focus{
+    outline: none;
+    font-weight: bolder;
+    font-size: 14pt;
+    border: 3pt solid #06582f; 
+}
+
+.calculate{
+    margin: 0 auto;
+    padding: 2pt;
+    background-color: #4d9c75;
+    color: white;
+    border-radius: 5pt 5pt;
+    display: inline-block;
+    width:25%;
+}
+
+.loan-results{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 3rem;
+}

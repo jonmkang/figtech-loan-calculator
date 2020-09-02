@@ -1,0 +1,24 @@
+.results{
+    padding: .5rem;
+    border: 1pt solid green;
+}
+
+.text{
+    text-align: center;
+    line-height: 18pt;
+}
+
+.numbers{
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+h3{
+    font-weight: normal;
+}
+
+h5{
+    margin: 10px;
+    padding: 0;
+    font-weight: normal;
+}
