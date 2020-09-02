@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/figtech-loan-calculator/static/css/main.41a1914c.chunk.css",
+    "main.css": "/figtech-loan-calculator/static/css/main.16ca34c1.chunk.css",
     "main.js": "/figtech-loan-calculator/static/js/main.886e9dc5.chunk.js",
     "main.js.map": "/figtech-loan-calculator/static/js/main.886e9dc5.chunk.js.map",
     "runtime-main.js": "/figtech-loan-calculator/static/js/runtime-main.f8322dba.js",
@@ -8,15 +8,15 @@
     "static/js/2.698f97d9.chunk.js": "/figtech-loan-calculator/static/js/2.698f97d9.chunk.js",
     "static/js/2.698f97d9.chunk.js.map": "/figtech-loan-calculator/static/js/2.698f97d9.chunk.js.map",
     "index.html": "/figtech-loan-calculator/index.html",
-    "precache-manifest.0b530e0f44e2a722ca902a4b2706ef99.js": "/figtech-loan-calculator/precache-manifest.0b530e0f44e2a722ca902a4b2706ef99.js",
+    "precache-manifest.66d0a7517979bed4958959a01a5ae29b.js": "/figtech-loan-calculator/precache-manifest.66d0a7517979bed4958959a01a5ae29b.js",
     "service-worker.js": "/figtech-loan-calculator/service-worker.js",
-    "static/css/main.41a1914c.chunk.css.map": "/figtech-loan-calculator/static/css/main.41a1914c.chunk.css.map",
+    "static/css/main.16ca34c1.chunk.css.map": "/figtech-loan-calculator/static/css/main.16ca34c1.chunk.css.map",
     "static/js/2.698f97d9.chunk.js.LICENSE.txt": "/figtech-loan-calculator/static/js/2.698f97d9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.f8322dba.js",
     "static/js/2.698f97d9.chunk.js",
-    "static/css/main.41a1914c.chunk.css",
+    "static/css/main.16ca34c1.chunk.css",
     "static/js/main.886e9dc5.chunk.js"
   ]
 }
