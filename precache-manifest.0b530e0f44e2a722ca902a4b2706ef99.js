@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6e2cac784ad0a20634b4e2e3f714edb0",
+    "revision": "40582a1bb301d834c6ae2c9f6efd020f",
     "url": "/figtech-loan-calculator/index.html"
   },
   {
-    "revision": "4e672a798f54094027e4",
-    "url": "/figtech-loan-calculator/static/css/main.ac374ca9.chunk.css"
+    "revision": "8957e3417b29dc40e15d",
+    "url": "/figtech-loan-calculator/static/css/main.41a1914c.chunk.css"
   },
   {
     "revision": "7b6ca2ec9d27cdfba2f6",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/figtech-loan-calculator/static/js/2.698f97d9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4e672a798f54094027e4",
-    "url": "/figtech-loan-calculator/static/js/main.3a2e27f1.chunk.js"
+    "revision": "8957e3417b29dc40e15d",
+    "url": "/figtech-loan-calculator/static/js/main.886e9dc5.chunk.js"
   },
   {
     "revision": "cf3fdab2b2e734a3cf5d",

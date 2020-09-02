@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/figtech-loan-calculator/precache-manifest.b002de165fdc046de6f70b1ab29807c0.js"
+  "/figtech-loan-calculator/precache-manifest.0b530e0f44e2a722ca902a4b2706ef99.js"
 );
 
 self.addEventListener('message', (event) => {
