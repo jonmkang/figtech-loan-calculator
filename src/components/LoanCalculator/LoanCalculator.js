@@ -133,108 +133,110 @@ export default class LoanCalculator extends Component {
                 <p className='details'>
                     This calculator will compute how much a monthly payment will be for a given loan amount.  Enter the loan amount, number of willing payments and interest rate given to you.  We will then compare our results with those found by an average payday lender for you to see as comparison.
                 </p>
-                <div className="background">
-                    <div className="background2">
-                        <form 
-                            className="loan" 
-                            onSubmit={(e)=>this.handleSubmit(e)} 
-                            autoComplete="off">
+                <div className="calculator">
+                    <div className="background">
+                        <div className="background2">
+                            <form 
+                                className="loan" 
+                                onSubmit={(e)=>this.handleSubmit(e)} 
+                                autoComplete="off">
 
-                            <div className='loan-amount'>
-                                <label htmlFor='amount' >
-                                    Loan Amount
-                                </label>
-                                <input 
-                                    name='amount' 
-                                    id='amount' 
-                                    value={this.state.amount} 
-                                    onBlur={(e) => this.handleAmount(e)} 
-                                    onChange={(e)=>this.changeAmount(e)}
-                                    />
-                                <span>
-                                    {this.state.amountError}
-                                </span>
-                            </div>
+                                <div className='loan-amount'>
+                                    <label htmlFor='amount' >
+                                        Loan Amount
+                                    </label>
+                                    <input 
+                                        name='amount' 
+                                        id='amount' 
+                                        value={this.state.amount} 
+                                        onBlur={(e) => this.handleAmount(e)} 
+                                        onChange={(e)=>this.changeAmount(e)}
+                                        />
+                                    <span>
+                                        {this.state.amountError}
+                                    </span>
+                                </div>
 
-                            <div className='loan-term'>
-                                <label 
-                                    htmlFor='term' 
-                                    data-tip 
-                                    data-for="term" >
-                                    Loan term in Months
-                                </label>
-                                <ReactTooltip id="term">
-                                    If payment seems to be too high,<br/> make the loan term longer.
-                                </ReactTooltip>
-                                <input 
-                                    name='termMonths' 
-                                    id='termMonths' 
-                                    onBlur={(e) => this.handleMonths(e)} 
-                                    onChange={(e) => this.changeMonths(e)} 
-                                    value={this.state.months}/>
-                                <span>
-                                    {this.state.monthsError}
-                                </span>
-                            </div>
+                                <div className='loan-term'>
+                                    <label 
+                                        htmlFor='term' 
+                                        data-tip 
+                                        data-for="term" >
+                                        Loan term in Months
+                                    </label>
+                                    <ReactTooltip id="term">
+                                        If payment seems to be too high,<br/> make the loan term longer.
+                                    </ReactTooltip>
+                                    <input 
+                                        name='termMonths' 
+                                        id='termMonths' 
+                                        onBlur={(e) => this.handleMonths(e)} 
+                                        onChange={(e) => this.changeMonths(e)} 
+                                        value={this.state.months}/>
+                                    <span>
+                                        {this.state.monthsError}
+                                    </span>
+                                </div>
 
-                            <div className='loan-term'>
-                                <label 
-                                    htmlFor='term' 
-                                    data-tip 
-                                    data-for="term" >
-                                    Loan term in Years
-                                </label>
-                                <ReactTooltip id="term">
-                                    If payment seems to be too high,<br/> make the loan term longer.
-                                </ReactTooltip>
-                                <input 
-                                    name='termYears' 
-                                    id='termYears' 
-                                    onBlur={(e)=> this.handleYears(e)} 
-                                    onChange={(e) => this.changeYears(e)} 
-                                    value={this.state.years} />
-                                <span>
-                                    {this.state.yearsError}
-                                </span>
-                            </div>
+                                <div className='loan-term'>
+                                    <label 
+                                        htmlFor='term' 
+                                        data-tip 
+                                        data-for="term" >
+                                        Loan term in Years
+                                    </label>
+                                    <ReactTooltip id="term">
+                                        If payment seems to be too high,<br/> make the loan term longer.
+                                    </ReactTooltip>
+                                    <input 
+                                        name='termYears' 
+                                        id='termYears' 
+                                        onBlur={(e)=> this.handleYears(e)} 
+                                        onChange={(e) => this.changeYears(e)} 
+                                        value={this.state.years} />
+                                    <span>
+                                        {this.state.yearsError}
+                                    </span>
+                                </div>
 
-                            <div className='interest-rate'>
-                                <label 
-                                    htmlFor='rate' 
-                                    data-tip 
-                                    data-for="apr-details">
-                                    Yearly Interest Rate
-                                </label>
-                                <ReactTooltip id="apr-details">
-                                    APR is the annual percentage rate <br/> of interest for your loan
-                                </ReactTooltip>
-                                <input 
-                                    placeholder="%" 
-                                    name='rate' 
-                                    id='rate' 
-                                    onBlur={(e) => this.handleRate(e)} 
-                                    onChange={(e) => this.changeRate(e)} 
-                                    value={this.state.rate} />
-                                <span>
-                                    {this.state.rateError}
-                                </span>
-                            </div>
-                        </form>
+                                <div className='interest-rate'>
+                                    <label 
+                                        htmlFor='rate' 
+                                        data-tip 
+                                        data-for="apr-details">
+                                        Yearly Interest Rate
+                                    </label>
+                                    <ReactTooltip id="apr-details">
+                                        APR is the annual percentage rate <br/> of interest for your loan
+                                    </ReactTooltip>
+                                    <input 
+                                        placeholder="%" 
+                                        name='rate' 
+                                        id='rate' 
+                                        onBlur={(e) => this.handleRate(e)} 
+                                        onChange={(e) => this.changeRate(e)} 
+                                        value={this.state.rate} />
+                                    <span>
+                                        {this.state.rateError}
+                                    </span>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                </div>
-                <div className="loan-results">
-                    <Results 
-                        amount={this.state.amount  > 0 ? this.state.amount : 0} 
-                        months={(this.state.months > 0) ? this.state.months : 0} 
-                        years={(this.state.years > 0) ? this.state.years : 0} 
-                        rate={(this.state.rate > 0) ? this.state.rate : 0} 
-                        name={"FigTech"}/>
-                    <Results 
-                        amount={this.state.amount  > 0 ? this.state.amount : 0} 
-                        months={this.state.months > 0 ? this.state.months : 0} 
-                        years={this.state.years > 0 ? this.state.years : 0} 
-                        rate={398} 
-                        name={"Payday Lender"}/>
+                    <div className="loan-results">
+                        <Results 
+                            amount={this.state.amount  > 0 ? this.state.amount : 0} 
+                            months={(this.state.months > 0) ? this.state.months : 0} 
+                            years={(this.state.years > 0) ? this.state.years : 0} 
+                            rate={(this.state.rate > 0) ? this.state.rate : 0} 
+                            name={"FigTech"}/>
+                        <Results 
+                            amount={this.state.amount  > 0 ? this.state.amount : 0} 
+                            months={this.state.months > 0 ? this.state.months : 0} 
+                            years={this.state.years > 0 ? this.state.years : 0} 
+                            rate={398} 
+                            name={"Payday Lender"}/>
+                    </div>
                 </div>
             </div>
         )

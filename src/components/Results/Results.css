@@ -22,3 +22,29 @@ h5{
     padding: 0;
     font-weight: normal;
 }
+
+
+@media screen and (min-width: 640px){
+    .results{
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .text{
+        font-size: 14pt;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .results{
+        padding: 1rem;
+    }
+
+    h3{
+        font-size: 18pt;
+    }
+
+    .text{
+        font-size: 16pt;
+    }
+}

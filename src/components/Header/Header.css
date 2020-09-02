@@ -9,6 +9,16 @@
     margin-bottom: 2rem;
 }
 
-h2{
+.title{
     margin: 10pt;
+}
+
+@media screen and (min-width: 640px){
+
+}
+
+@media screen and (min-width: 1080px){
+    .title{
+        font-size: 40pt;
+    }
 }

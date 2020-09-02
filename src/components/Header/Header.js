@@ -9,7 +9,7 @@ export default class Header extends Component {
         return <>
             <nav className='Header'>
                 <Menu/>
-                <h2>
+                <h2 className='title'>
                     FigTech
                 </h2>
             </nav>

@@ -91,3 +91,90 @@ input:focus{
     justify-content: space-evenly;
     margin-top: 3rem;
 }
+
+@media screen and (min-width: 720px){
+    
+    .background{
+        background-color: #4d9c75;
+        width: 30%;
+        margin: 1rem;
+        z-index: 1;
+        position: relative;
+        top: -10pt;
+    }
+
+    .background2{
+        background-color: #4d9c75;
+        margin: 1rem;
+        z-index: 1;
+        position: relative;
+        top: 30pt;
+        left: 40pt;
+    }
+
+    .loan{
+        width: 110%;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        outline: 1pt solid white;
+        border: 1pt solid #4d9c75;
+        z-index: 2;
+        position: relative;
+        top: -15pt; 
+        left: -35pt;
+    }
+
+    .calculator{
+        display:flex;
+        flex-direction: row;
+    }
+
+    .loan-results{
+        margin: 3rem;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    .background{
+        height: 430px;
+        margin-left: 10rem;
+    }
+
+    .background2{
+        height: 430px;
+        top: 60pt;
+        left: 60pt;
+    }
+
+    .loan{
+        width: 105%;
+        top: -45pt;
+        left: -45pt;
+    }
+
+    .calculator{
+        justify-content: space-evenly;
+    }
+
+
+    .loan-results{
+        flex-grow: 2;
+    }
+
+    .details{
+        padding-left: 10rem;
+        padding-right: 10rem;
+    }
+
+    .loan-amount, .loan-term, .interest-rate{
+        font-size: 16pt;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .details{
+        padding-left: 500px;
+        padding-right: 500px;
+    }
+}
