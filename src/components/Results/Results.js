@@ -45,14 +45,14 @@ export default class Results extends Component {
 
                         <h5>Our monthly payment</h5>
                         <span className="numbers">
-                            {!isNaN(information.payments) ? information.payments : 0}
+                            {!isNaN(information.payments) && isFinite(information.payments)  ? information.payments : 0}
                         </span>
                     </div>
 
                     <div className="text">
                         <h5>Total Amount Paid</h5>
                         <span className="numbers">
-                            {!isNaN(totalAmount) ? totalAmount : 0}
+                            {!isNaN(totalAmount)  ? totalAmount : 0}
                         </span>
                         <h5>Interest Accumulated</h5>
                         <span className="numbers">
@@ -77,7 +77,7 @@ export default class Results extends Component {
                     
                     <h5>Their Monthly Payment</h5>
                     <span className="numbers">
-                        {!isNaN(information.payments) ? information.payments : 0}
+                        {!isNaN(information.payments)  && isFinite(information.payments) ? information.payments : 0}
                     </span>
                 </div>
                 <div className="text">
